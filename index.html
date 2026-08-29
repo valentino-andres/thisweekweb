@@ -6,41 +6,165 @@
   <title>This Week Web — live this week</title>
   <meta name="description" content="One-page site and Google Business Profile for local Texas shops. $499 this week, $249 to start, $99/mo. Tax at checkout. No ranking promises.">
   <style>
-    body { margin: 0; font-family: Georgia, serif; color: #1a1a1a; background: #faf8f5; line-height: 1.5; }
-    header, main, footer { max-width: 40rem; margin: 0 auto; padding: 1.5rem; }
-    h1 { font-size: 1.75rem; margin: 0 0 .5rem; }
-    h2 { font-size: 1.15rem; margin: 1.75rem 0 .5rem; }
-    .price { font-size: 1.05rem; }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: #1a1a1a;
+      background: #faf8f5;
+      line-height: 1.45;
+      font-size: 1rem;
+    }
     a { color: #1a3d2b; }
-    footer { font-size: .9rem; border-top: 1px solid #ddd; margin-top: 2rem; }
-    ul { padding-left: 1.2rem; }
+    a:focus-visible {
+      outline: 2px solid #1a3d2b;
+      outline-offset: 3px;
+    }
+    .page {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 0.7rem 1rem 2rem;
+    }
+    .mast {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      border-bottom: 2px solid #1a3d2b;
+      margin: 0 0 0.55rem;
+    }
+    .mast p {
+      margin: 0;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #1a3d2b;
+    }
+    .mast a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.75rem;
+      padding: 0 0.15rem;
+      font-size: 0.95rem;
+      letter-spacing: 0;
+      text-transform: none;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 1.15rem;
+      line-height: 1.25;
+      margin: 0 0 0.55rem;
+      font-weight: 700;
+    }
+    .offer {
+      background: #fffdf8;
+      border: 1px solid #d8d0c6;
+      border-left: 4px solid #1a3d2b;
+      padding: 0.55rem 0.7rem;
+      margin: 0 0 0.55rem;
+    }
+    .offer p { margin: 0; }
+    .price {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #142e21;
+    }
+    .offer .refund {
+      margin-top: 0.4rem;
+      font-size: 0.8rem;
+      line-height: 1.35;
+    }
+    .contact p {
+      margin: 0 0 0.35rem;
+      font-size: 0.8rem;
+      line-height: 1.35;
+    }
+    .contact p:last-child { margin-bottom: 0; }
+    header .start-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #1a3d2b;
+      margin: 0.15rem 0 0.15rem;
+    }
+    .service-area {
+      margin: 0.5rem 0 0;
+      font-size: 0.8rem;
+      color: #333;
+    }
+    main {
+      margin-top: 1.35rem;
+      padding-top: 1rem;
+      border-top: 1px solid #d8d0c6;
+    }
+    h2 {
+      font-size: 1rem;
+      margin: 1.25rem 0 0.4rem;
+      color: #1a3d2b;
+    }
+    main h2:first-child { margin-top: 0; }
+    main p { margin: 0 0 0.7rem; }
+    ul {
+      margin: 0 0 0.7rem;
+      padding-left: 1.15rem;
+    }
+    li { margin: 0.2rem 0; }
+    footer {
+      margin-top: 1.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid #d8d0c6;
+      font-size: 0.85rem;
+    }
+    footer p { margin: 0 0 0.35rem; }
+    footer a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.75rem;
+    }
+    @media (min-width: 40rem) {
+      .page { padding: 1.25rem 1.5rem 2.5rem; }
+      h1 { font-size: 1.45rem; }
+      .price { font-size: 1.05rem; }
+      .offer .refund, .contact p, .service-area { font-size: 0.95rem; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <p>This Week Web</p>
-    <h1>Your Texas shop, live on the web this week.</h1>
-    <p class="price">$499 this week. $249 to start. $99/mo after. Tax collected at checkout.</p>
-    <p>Leander, Cedar Park, Liberty Hill, and Round Rock.</p>
-  </header>
-  <main>
-    <h2>What you get</h2>
-    <ul>
-      <li>A live one-page website</li>
-      <li>Google Business Profile setup</li>
-      <li>Small copy and photo updates plus review replies on the $99/mo plan</li>
-    </ul>
-    <p>We do not promise Google rankings, review volume, or call volume. Work starts when the $249 deposit clears. The $249 applies to the $499 setup, refundable only if we have not started. $99/mo cancel anytime.</p>
-    <h2>Start</h2>
-    <p>Email <a href="mailto:rubenaguerra@gmail.com">rubenaguerra@gmail.com</a>. Do not visit the office. We work by email and phone.</p>
-    <h2 id="privacy">Privacy</h2>
-    <p>We collect only what you send us (name, email, phone, message, and files) so we can reply and do the work. We do not sell your information. This page may use ordinary hosting cookies.</p>
-    <p>Questions: <a href="mailto:rubenaguerra@gmail.com">rubenaguerra@gmail.com</a></p>
-    <p>Ruben Guerra, 1801 Lucera Bnd, Leander, TX 78641.</p>
-  </main>
-  <footer>
-    <p>Ruben Guerra · This Week Web · 1801 Lucera Bnd, Leander, TX 78641 · <a href="mailto:rubenaguerra@gmail.com">rubenaguerra@gmail.com</a></p>
-    <p><a href="#privacy">Privacy</a></p>
-  </footer>
+  <div class="page">
+    <header>
+      <div class="mast">
+        <p>This Week Web</p>
+        <p><a href="#privacy">Privacy</a></p>
+      </div>
+      <h1>Your Texas shop, live on the web this week.</h1>
+      <div class="offer">
+        <p class="price">$499 this week. $249 to start. $99/mo after. Tax collected at checkout.</p>
+        <p class="refund">The $249 applies to the $499 setup, refundable only if we have not started. $99/mo cancel anytime.</p>
+      </div>
+      <div class="contact">
+        <h2 class="start-label">Start</h2>
+        <p>Email <a href="mailto:rubenaguerra@gmail.com">rubenaguerra@gmail.com</a>. Do not visit the office. We work by email and phone.</p>
+        <p>Ruben Guerra, 1801 Lucera Bnd, Leander, TX 78641.</p>
+      </div>
+      <p class="service-area">Leander, Cedar Park, Liberty Hill, and Round Rock.</p>
+    </header>
+    <main>
+      <h2>What you get</h2>
+      <ul>
+        <li>A live one-page website</li>
+        <li>Google Business Profile setup</li>
+        <li>Small copy and photo updates plus review replies on the $99/mo plan</li>
+      </ul>
+      <p>We do not promise Google rankings, review volume, or call volume. Work starts when the $249 deposit clears.</p>
+      <h2 id="privacy">Privacy</h2>
+      <p>We collect only what you send us (name, email, phone, message, and files) so we can reply and do the work. We do not sell your information. This page may use ordinary hosting cookies.</p>
+      <p>Questions: <a href="mailto:rubenaguerra@gmail.com">rubenaguerra@gmail.com</a></p>
+    </main>
+    <footer>
+      <p>Ruben Guerra · This Week Web · 1801 Lucera Bnd, Leander, TX 78641 · <a href="mailto:rubenaguerra@gmail.com">rubenaguerra@gmail.com</a></p>
+      <p><a href="#privacy">Privacy</a></p>
+    </footer>
+  </div>
 </body>
 </html>
